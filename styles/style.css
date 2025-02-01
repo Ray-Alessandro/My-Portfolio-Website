@@ -1,0 +1,128 @@
+/*Usando display flex en el body para que el footer se mantenga abajo*/
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/*Estilos generales*/
+
+.navbar {
+    padding: 10px 20px;
+}
+
+/*SECCIÓN HERO (Grid + Flex)*/
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hero-text {
+    max-width: 100%;
+    text-align: left;
+}
+
+.hero-image img {
+    width: 100%;
+    min-width: 150px;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Botones de contacto */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* LinkedIn */
+.buttons a:nth-child(1) {
+    background-color: #0077b5;
+}
+
+/* GitHub */
+.buttons a:nth-child(2) {
+    background-color: #333;
+}
+
+/* Correo */
+.buttons a:nth-child(3) {
+    background-color: #25d366;
+}
+
+/*Boton descargar CV*/
+
+.download-btn {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.download-btn a {
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    line-height: 0.5;
+    padding: 10px 0;
+}
+
+/*Media Queries*/
+@media (max-width: 992px) {
+    /* Estructura en una sola columna */
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+
+    /* Botones en vertical */
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .buttons a {
+        width: 100%;
+    }
+}
