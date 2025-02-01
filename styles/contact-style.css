@@ -6,11 +6,99 @@ body {
 
 main {
     flex: 1;
+
+    /*Estilos para centrar el contenido*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Estilos generales*/
 .navbar {
     padding: 10px 20px;
+}
+
+/* Sección de Contacto */
+.contact {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    align-self: center;
+}
+
+.section-title {
+    font-size: 2.3rem;
+}
+
+/* Contenedor del formulario con Grid */
+.contact-form-container {
+    margin-top: 10px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Información de contacto */
+.contact-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Estilos del formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    scale: 1.03;
 }
 
 /*Footer*/
@@ -20,4 +108,15 @@ footer {
     text-align: center;
     line-height: 0.8;
     padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
 }

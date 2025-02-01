@@ -22,6 +22,7 @@
 
 <body>
 
+<!-- HTML con Display Flex y Grid -->
     <!-- Navbar Bootstrap -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,13 +47,25 @@
 
     <!-- Sección de Contacto -->
     <main class="contact">
-        <h2 class="section-title">Contacto</h2>
+        <h2 class="section-title">Contáctame</h2>
+
         <div class="contact-form-container">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Cursus in aliquet senectus nunc vitae.</p>
-            <form class="contact-form">
-                <label for="name">Nombres</label>
-                <input type="text" id="name" name="name" placeholder="Lucas Perez" required>
+            
+            <!-- Información de Contacto -->
+            <div class="contact-info">
+                <h3>Información</h3>
+                <p>📍 Ubicación: Lima, Perú</p>
+                <p>📧 Email: <a href="mailto:ray_punkeki@hotmail.com">ray_punkeki@hotmail.com</a></p>
+
+                <h3>Redes Sociales</h3>
+                <p>🔗 <a href="https://www.linkedin.com/in/ray-alessandro-del-carmen-zorrilla-081352174/" target="_blank">LinkedIn</a></p>
+                <p>🔗 <a href="https://github.com/Ray-Alessandro" target="_blank">GitHub</a></p>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <form class="contact-form" action="mailto:ray_punkeki@hotmail.com?subject=Consulta desde el Portafolio" method="POST" enctype="text/plain">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name" placeholder="Ejemplo: Lucas Pérez" required>
 
                 <label for="email">Correo Electrónico</label>
                 <input type="email" id="email" name="email" placeholder="lucas_perez@ejemplo.com" required>
@@ -61,10 +74,9 @@
                 <input type="text" id="subject" name="subject" placeholder="Escribe el motivo de tu mensaje" required>
 
                 <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí"
-                    required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar Mensaje</button>
             </form>
         </div>
     </main>
