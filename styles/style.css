@@ -6,6 +6,12 @@ body {
 
 main {
     flex: 1;
+    /*Centrar el contenido*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10%;
 }
 
 /*Estilos generales*/
@@ -14,28 +20,49 @@ main {
     padding: 10px 20px;
 }
 
-/*SECCIÓN HERO (Grid + Flex)*/
+/*SECCIÓN HERO*/
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
     width: 100%;
+    max-width: 1200px;
+    gap: 40px;
 }
 
 .hero-text {
-    max-width: 100%;
     text-align: left;
+    max-width: 600px;
 }
 
+.intro {
+    font-size: 18px;
+    color: #555;
+    margin: 0px;
+}
+
+.name {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Imagen Perfil */
 .hero-image img {
     width: 100%;
     min-width: 150px;
-    max-width: 250px;
+    max-width: 350px;
     display: block;
     margin: 0 auto;
     height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Botones de contacto */
@@ -47,11 +74,17 @@ main {
 
 .buttons a {
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     text-align: center;
+    font-size: 16px;
+}
+
+.buttons a:hover {
+    opacity: 0.8;
+    scale: 1.05;
 }
 
 /* LinkedIn */
@@ -73,17 +106,24 @@ main {
 
 .download-btn {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .download-btn a {
+    display: inline-block;
     text-decoration: none;
     background: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 15px 25px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 20px;
+}
+
+.download-btn a:hover {
+    opacity: 0.8;
+    background: #0056b3;
+    scale: 1.02;
 }
 
 /*Footer*/
@@ -99,31 +139,35 @@ footer {
 @media (max-width: 992px) {
     /* Estructura en una sola columna */
     .hero {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
     }
 
     .hero-text {
-        max-width: 100%;
+        text-align: center;
     }
 
     .hero-image img {
-        max-width: 250px;
+        max-width: 300px;
     }
 
     /* Botones en vertical */
     .buttons {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .buttons a {
-        width: 80%;
+        width: 40%;
     }
 }
 
 @media (max-width: 768px) {
     .buttons a {
-        width: 100%;
+        width: 80%;
+    }
+    
+    .hero-text {
+        padding: 0 20px;
     }
 }
