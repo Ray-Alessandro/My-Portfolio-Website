@@ -1,5 +1,5 @@
 /*Usando display flex en el body para que el footer se mantenga abajo*/
-html, body {
+body {
     display: flex;
     flex-direction: column;
 }
@@ -21,6 +21,7 @@ main {
     align-items: center;
     gap: 20px;
     padding: 20px;
+    width: 100%;
 }
 
 .hero-text {
@@ -90,8 +91,8 @@ footer {
     background: #222;
     color: white;
     text-align: center;
-    line-height: 0.5;
-    padding: 10px 0;
+    line-height: 0.8;
+    padding: 20px 0;
 }
 
 /*Media Queries*/

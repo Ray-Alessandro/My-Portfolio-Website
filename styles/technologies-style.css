@@ -1,3 +1,12 @@
+/*Usando display flex en el body para que el footer se mantenga abajo*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
 
 /*Estilos generales*/
 .navbar {
@@ -6,10 +15,16 @@
 
 /* Carousel */
 .carousel-item img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     object-fit: contain;
-    display: block;
+}
+
+.carousel button{
+    color: white;
+    border-radius: 5px;
+    width: 60px;
+    height: 70px;
     margin: auto;
 }
 
@@ -18,6 +33,6 @@ footer {
     background: #222;
     color: white;
     text-align: center;
-    line-height: 0.5;
-    padding: 10px 0;
+    line-height: 0.8;
+    padding: 20px 0;
 }
