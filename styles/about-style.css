@@ -63,12 +63,6 @@ main {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 /*Footer*/
 footer {
     background: #222;
@@ -76,4 +70,10 @@ footer {
     text-align: center;
     line-height: 0.8;
     padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
