@@ -1,0 +1,33 @@
+
+//Reset Styles
+@import "./base/reset";
+
+//Components Styles
+@import "./components/navbar";
+@import "./components/footer";
+
+
+//Pages Styles
+@import "./pages/home";
+@import "./pages/about";
+/*
+@import "./pages/projects";
+@import "./pages/technologies";
+@import "./pages/contact";
+*/
+
+@import "./pages/technologies";
+
+
+/*Media Queries*/
+@import "./base/media-queries-main";
+
+body {
+    @include flex(column);
+}
+
+main {
+    flex: 1;
+    @include flex-align(column, center, center);
+    padding: 40px 10%;
+}

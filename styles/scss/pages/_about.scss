@@ -1,0 +1,32 @@
+@import "../base/mixins";
+
+/* Sección de "Sobre mí" */
+.about {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    @include flex(column);
+
+    /* Estilos de los títulos */
+    .section-title {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Contenedor de información */
+    .info-box {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .grid-container {
+        @include grid-columns(2, 1fr, 20px);
+    }
+}

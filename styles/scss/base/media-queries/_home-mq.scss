@@ -1,0 +1,39 @@
+/*Media Queries*/
+@media (max-width: 1024px) {
+    /* Estructura en una sola columna */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+
+        .hero-text {
+            text-align: center;
+
+            /* Botones en vertical */
+            .buttons {
+                justify-content: center;
+                flex-wrap: wrap;
+                a {
+                    width: 40%;
+                }
+            }
+        }
+
+        .hero-image {
+            img {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {    
+    .hero-text {
+        padding: 0 20px;
+
+        .buttons {
+            a {
+                width: 80%;
+            }
+        }
+    }
+}
