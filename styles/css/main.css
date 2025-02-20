@@ -164,8 +164,6 @@ footer {
 
 /*
 @import "./pages/projects";
-@import "./pages/technologies";
-@import "./pages/contact";
 */
 /* Carousel */
 .container h2 {
@@ -189,6 +187,77 @@ footer {
   width: 60px;
   height: 70px;
   margin: auto;
+}
+
+/* Sección de Contacto */
+.contact {
+  padding: 0;
+  width: 100%;
+  max-width: 1600px;
+  text-align: center;
+  align-self: center;
+  /* Contenedor del formulario con Grid */
+}
+.contact .section-title {
+  font-size: 2.3rem;
+}
+.contact .contact-form-container {
+  margin-top: 10px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Información de contacto */
+  /* Estilos del formulario */
+}
+.contact .contact-form-container .contact-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form-container .contact-info h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.contact .contact-form-container .contact-info p {
+  margin: 5px 0;
+  color: #555;
+}
+.contact .contact-form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .contact-form-container .contact-form label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.contact .contact-form-container .contact-form input, .contact .contact-form-container .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact .contact-form-container .contact-form textarea {
+  resize: none;
+}
+.contact .contact-form-container .contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contact .contact-form-container .contact-form button:hover {
+  background-color: #0056b3;
+  scale: 1.03;
 }
 
 /*Media Queries*/
