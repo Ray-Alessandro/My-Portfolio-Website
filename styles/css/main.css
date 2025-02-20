@@ -203,12 +203,12 @@ footer {
 }
 .contact .contact-form-container {
   margin-top: 10px;
-  width: 70%;
+  width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
-  padding: 30px;
+  padding: 25px 30px;
   background: #f8f9fa;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -309,6 +309,18 @@ footer {
   .container .carousel button {
     width: 40px;
     height: 50px;
+  }
+}
+/*Importando media queries de Contact*/
+@media (max-width: 768px) {
+  body .contact .contact-form-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 85%;
+  }
+  body .contact .contact-form-container .contact-info {
+    text-align: center;
   }
 }
 body {

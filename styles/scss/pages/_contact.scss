@@ -13,12 +13,12 @@
     /* Contenedor del formulario con Grid */
     .contact-form-container {
         margin-top: 10px;
-        width: 70%;
+        width: 60%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         align-items: center;
-        padding: 30px;
+        padding: 25px 30px;
         background: #f8f9fa;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
