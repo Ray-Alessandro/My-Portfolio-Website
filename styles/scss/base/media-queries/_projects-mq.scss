@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .container {
+        .card {
+            width: 90%;
+            justify-self: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

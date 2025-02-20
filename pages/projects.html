@@ -42,65 +42,66 @@
 
     <!-- Sección de Proyectos -->
     <main class="container py-4">
-        <h2 class="text-center mb-4">Proyectos</h2>
+        <section class="projects">
+            <h1 class="text-center mb-4">Mis Proyectos</h1>
 
-        <div class="row">
-            <!-- Proyecto: Booking -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="../assets/img/projects/booking-app.jpg" class="card-img-top" alt="Booking - Aplicación de Reservas">
-                    <div class="card-body">
-                        <h5 class="card-title">Booking - Sistema de Reservas</h5>
-                        <p class="card-text">
-                            Booking es una aplicación en consola desarrollada en C++ que permite gestionar reservas de vuelos de manera eficiente. Utiliza algoritmos optimizados para garantizar facilidad de uso, rapidez y confiabilidad en el procesamiento de datos.
-                        </p>
-                        <div class="mb-2">
-                            <span class="badge bg-secondary">C++</span>
-                            <span class="badge bg-dark">Estructuras de Datos</span>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Proyecto: Booking -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../assets/img/projects/booking-app.jpg" class="card-img-top" alt="Booking - Aplicación de Reservas">
+                        <div class="card-body">
+                            <h5 class="card-title">Booking - Sistema de Reservas</h5>
+                            <p class="card-text">
+                                Booking es una aplicación en consola desarrollada en C++ que permite gestionar reservas de vuelos de manera eficiente. Utiliza algoritmos optimizados para garantizar facilidad de uso, rapidez y confiabilidad en el procesamiento de datos.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-secondary">C++</span>
+                                <span class="badge bg-dark">Estructuras de Datos</span>
+                            </div>
+                            <a href="https://github.com/Ray-Alessandro/Booking.git" target="_blank" class="btn btn-primary">Ver Proyecto</a>
                         </div>
-                        <a href="https://github.com/Ray-Alessandro/Booking.git" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+    
+                <!-- Proyecto: Docker_Uma-Web-Application (Uma) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../assets/img/projects/uma_web_application.jpg" class="card-img-top" alt="Docker_Uma-Web-Application - Red Social y Ecommerce">
+                        <div class="card-body">
+                            <h5 class="card-title">Uma - Red Social & Ecommerce</h5>
+                            <p class="card-text">
+                                Uma es una aplicación web desarrollada con Docker y Docker Compose, que permite a los usuarios realizar publicaciones, interactuar mediante comentarios y realizar compras en su tienda en línea. Inspirada en la tienda real Uma en Perú, ofrece productos artesanales y ropa.
+                            </p>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Docker</span>
+                                <span class="badge bg-secondary">Docker Compose</span>
+                                <span class="badge bg-warning text-dark">Node.js</span>
+                                <span class="badge bg-success">MongoDB</span>
+                            </div>
+                            <a href="https://github.com/Ray-Alessandro/Docker_Uma-Web-Application" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Proyecto: SymptoTrack -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../assets/img/projects/symptotrack.jpg" class="card-img-top" alt="SymptoTrack - Detección de enfermedades basada en síntomas">
+                        <div class="card-body">
+                            <h5 class="card-title">SymptoTrack - Diagnóstico basado en síntomas</h5>
+                            <p class="card-text">SymptoTrack es una aplicación inteligente que detecta posibles enfermedades en base a síntomas mediante algoritmos avanzados y nodos probabilísticos. Utiliza grafos y búsqueda en anchura (BFS) para un análisis preciso de datos médicos. Desarrollada con FastAPI, React y procesamiento de datasets.</p>
+                            <div class="mb-2">
+                                <span class="badge bg-secondary">FastAPI</span>
+                                <span class="badge bg-dark">BFS Algorithm</span>
+                            </div>
+                            <a href="https://github.com/Ray-Alessandro/SymptoTrack/tree/develop" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Proyecto: Docker_Uma-Web-Application (Uma) -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="../assets/img/projects/uma_web_application.jpg" class="card-img-top" alt="Docker_Uma-Web-Application - Red Social y Ecommerce">
-                    <div class="card-body">
-                        <h5 class="card-title">Uma - Red Social & Ecommerce</h5>
-                        <p class="card-text">
-                            Uma es una aplicación web desarrollada con Docker y Docker Compose, que permite a los usuarios realizar publicaciones, interactuar mediante comentarios y realizar compras en su tienda en línea. Inspirada en la tienda real Uma en Perú, ofrece productos artesanales y ropa.
-                        </p>
-                        <div class="mb-2">
-                            <span class="badge bg-primary">Docker</span>
-                            <span class="badge bg-secondary">Docker Compose</span>
-                            <span class="badge bg-warning text-dark">Node.js</span>
-                            <span class="badge bg-success">MongoDB</span>
-                        </div>
-                        <a href="https://github.com/Ray-Alessandro/Docker_Uma-Web-Application" target="_blank" class="btn btn-primary">Ver Proyecto</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto: SymptoTrack -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="../assets/img/projects/symptotrack.jpg" class="card-img-top" alt="SymptoTrack - Detección de enfermedades basada en síntomas">
-                    <div class="card-body">
-                        <h5 class="card-title">SymptoTrack - Diagnóstico basado en síntomas</h5>
-                        <p class="card-text">SymptoTrack es una aplicación inteligente que detecta posibles enfermedades en base a síntomas mediante algoritmos avanzados y nodos probabilísticos. Utiliza grafos y búsqueda en anchura (BFS) para un análisis preciso de datos médicos. Desarrollada con FastAPI, React y procesamiento de datasets.</p>
-                        <div class="mb-2">
-                            <span class="badge bg-secondary">FastAPI</span>
-                            <span class="badge bg-dark">BFS Algorithm</span>
-                        </div>
-                        <a href="#" class="btn btn-primary">Ver Proyecto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
-
 
     <!-- Footer -->
     <footer>

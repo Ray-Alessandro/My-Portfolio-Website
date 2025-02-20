@@ -1,7 +1,9 @@
+@import "../base/variables";
+
 /*Footer*/
 footer {
-    background: #222;
-    color: white;
+    background: $footer-bg-color;
+    color: $footer-text-color;
     text-align: center;
     line-height: 0.8;
     padding: 20px 0;
